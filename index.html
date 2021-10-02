@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="tabs.css" />
+  </head>
+  <body>
+    <section class="clonepen">
+      <div class="container">
+        <div class="axr-contained--cw-5">
+          <div class="tabs-container">
+            <button class="tablink" onclick="openEditor(event, 'HTML')">
+              HTML
+            </button>
+            <button class="tablink" onclick="openEditor(event, 'CSS')">
+              CSS
+            </button>
+            <button class="tablink" onclick="openEditor(event, 'JAVASCRIPT')">
+              JAVASCRIPT
+            </button>
+          </div>
+          <div class="editors-container">
+            <div id="HTML-editor-frame--wrapper" class="tabcontent">
+              <iframe
+                src="html_editor.html"
+                frameborder="0"
+                margin="0"
+                width="425"
+                height="500"
+                id="html-editor-frame"
+              ></iframe>
+            </div>
+            <div id="CSS-editor-frame--wrapper" class="tabcontent">
+              <iframe
+                src="css_editor.css"
+                frameborder="0"
+                width="425"
+                height="500"
+                id="css-editor-frame"
+              ></iframe>
+            </div>
+            <div id="JAVASCRIPT-editor-frame--wrapper" class="tabcontent">
+              <iframe
+                src="js_editor.js"
+                frameborder="0"
+                margin="0"
+                width="425"
+                height="500"
+                id="javascript-editor-frame"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="axr-contained--cw-5 axr-offset-left-100p">
+          <div class="live-viewer-frame--wrapper">
+            <iframe
+              src="live_viewer.html"
+              frameborder="0"
+              margin="0"
+              width="500"
+              height="500"
+              id="live-viewer-frame"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
